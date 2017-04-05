@@ -1,0 +1,25 @@
+// Navbar =====================================================================
+
+.navbar {
+  border: none;
+  @include box-shadow(0 1px 5px rgba(0,0,0,.1));
+  &-transparent{
+    .navbar-brand{
+      color: #eee
+    }
+    .nav{
+      &>li{
+        &>a{
+          color: #eee;
+          &:hover{
+            background-color: transparent;
+            color: $brand-primary
+          }
+        }
+      }
+    }
+  }
+  &-brand{
+    width: 240px;
+  }
+}
