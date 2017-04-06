@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  	<app-header></app-header>
+  	<app-header v-bind:page="$route.name"></app-header>
     <router-view class="page"></router-view>
     <app-footer></app-footer>
   </div>

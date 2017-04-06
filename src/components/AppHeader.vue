@@ -14,10 +14,10 @@
 
 	            <div class="collapse navbar-collapse" id="navbar-header-collapse">
 	                <ul class="nav navbar-nav">
-	                    <li><a href="/index">首页</a></li>
-	                    <li><a href="#">活动专区</a></li>
-	                    <li><a href="#">积分商城</a></li>
-	                    <li class="active"><a href="/user">个人中心</a></li>
+	                    <li><router-link to="/index" >首页</router-link></li>
+	                    <li><router-link to="/projects" >活动专区</router-link></li>
+	                    <li><router-link to="/mall" >积分商城</router-link></li>
+	                    <li><router-link to="/user" >个人中心</router-link></li>
 	                </ul>
 	               <div class="navbar-right">
 	                 <button type="button" class="btn btn-default navbar-btn">注册</button>
@@ -36,6 +36,7 @@ export default {
 
     }
   },
+	props: ['page'],	
   methods: {
    
   }
