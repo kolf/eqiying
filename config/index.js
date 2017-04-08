@@ -29,7 +29,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-            target: 'http://demo.eqiying.com/Administrat/Handler',
+            target: 'http://show.eqiying.com/Administrat/Handler',
             changeOrigin: true,
             pathRewrite: {
                 '^/api': ''

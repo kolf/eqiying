@@ -31,4 +31,15 @@
 
 .pad{
   padding: 15px;
+  &-h{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &-x2{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  &-x2{
+    padding: 30px;
+  }
 }

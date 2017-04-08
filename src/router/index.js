@@ -4,6 +4,7 @@ import Home from '@/page/Home'
 import User from '@/page/User'
 import Projects from '@/page/Projects'
 import Mall from '@/page/Mall'
+import Signup from '@/page/Signup'
 
 Vue.use(Router)
 
@@ -25,6 +26,10 @@ export default new Router({
       path: '/mall',
       name: 'mall',
       component: Mall
+    },{
+      path: '/signup',
+      name: 'signup',
+      component: Signup
     },{
 	    path: '*',
     	component: Home
