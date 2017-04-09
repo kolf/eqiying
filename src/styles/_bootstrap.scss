@@ -23,3 +23,73 @@
     // width: 240px;
   }
 }
+
+// Navs =======================================================================
+
+.nav-tabs {
+  > li > a,
+  > li > a:focus {
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    color: $navbar-default-link-color;
+    @include box-shadow(inset 0 -1px 0 #ddd);
+    @include transition(all 0.2s);
+
+    &:hover {
+      background-color: transparent;
+      @include box-shadow(inset 0 -2px 0 $brand-primary);
+      color: $brand-primary;
+    }
+  }
+
+  & > li.active > a,
+  & > li.active > a:focus {
+    border: none;
+    @include box-shadow(inset 0 -2px 0 $brand-primary);
+    color: $brand-primary;
+
+    &:hover {
+      border: none;
+      color: $brand-primary;
+    }
+  }
+
+  & > li.disabled > a {
+    @include box-shadow(inset 0 -1px 0 #ddd);
+  }
+
+  &.nav-justified {
+    & > li > a,
+    & > li > a:hover,
+    & > li > a:focus,
+    & > .active > a,
+    & > .active > a:hover,
+    & > .active > a:focus {
+      border: none;
+    }
+  }
+}
+
+.nav{
+  &-center{
+    text-align: center;
+    &>li{
+      display: inline-block;
+      float: none;
+    }
+  }
+}
+
+
+// Modal =======================================================================
+.modal{
+  &-header{
+    .close{
+      font-size: 30px
+    }
+  }
+  &-content{
+    box-shadow: none
+  }
+}

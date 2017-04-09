@@ -8,42 +8,57 @@
               <p>嗨！只需要短短一分钟的时间既可让您在社区上注册。仅仅需要一个用户名、一个密码以及一个电子邮件地址。
 如已注册，则可以在此登录。</p>
               <form @submit.prevent="validateForm">
-                <div class="form-group" :class="{'has-error': errors.has('name') }">
+                <div class="form-group">
+                  <label class="control-label" for="radios">会员类型</label>
+                  <div class="">
+                    <label class="radio-inline">
+                      <input type="radio" name="radios" value="0" v-model="userForm.PanelType">乐购
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="radios" value="3" v-model="userForm.PanelType">华润
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="radios" value="4" v-model="userForm.PanelType">苏果
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="radios" value="To00001" v-model="userForm.PanelType">Tesco会员
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="radios" value="1" v-model="userForm.PanelType">非会员
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group" :class="{'has-error': errors.has('PanelLoginName') }">
                   <label>登录名</label>
-                  <input name="name" v-model="userForm.name" v-validate="'required'" type="text" class="form-control" placeholder="请填写登录名">
-                  <p class="text-danger" v-show="errors.has('name')">{{ errors.first('name') }}</p>
+                  <input name="PanelLoginName" v-model="userForm.PanelLoginName" v-validate="'required'" type="text" class="form-control" placeholder="请填写登录名">
+                  <p class="text-danger" v-show="errors.has('PanelLoginName')">{{ errors.first('PanelLoginName') }}</p>
                 </div>
                 <div class="form-group" :class="{'has-error': errors.has('password') }">
                   <label>密码</label>
-                  <input name="password" v-validate="'required'" type="password" class="form-control" placeholder="请填写密码">
+                  <input name="password" v-model="userForm.PanelPw" v-validate="'required'" type="password" class="form-control" placeholder="请填写密码">
                   <p class="text-danger" v-show="errors.has('password')">{{ errors.first('password') }}</p>
                 </div>
                 <div class="form-group" :class="{'has-error': errors.has('rePassword') }">
                   <label>确认密码</label>
-                  <input name="rePassword" v-validate="'required'" type="password" class="form-control" placeholder="请填写确认密码">
+                  <input name="rePassword" v-model="userForm.RPanelPw" v-validate="'required'" type="password" class="form-control" placeholder="请填写确认密码">
                   <p class="text-danger" v-show="errors.has('rePassword')">{{ errors.first('rePassword') }}</p>
                 </div>
                 <div class="form-group" :class="{'has-error': errors.has('emall') }">
                   <label>电子邮件</label>
-                  <input name="emall" v-validate="'required'" type="email" class="form-control" placeholder="请填写电子邮件">
+                  <input name="emall" v-model="userForm.PanelEmail" v-validate="'required'" type="email" class="form-control" placeholder="请填写电子邮件">
                   <p class="text-danger" v-show="errors.has('emall')">{{ errors.first('emall') }}</p>
                 </div>
                 <div class="form-group">
                   <label>会员卡号</label>
-                  <input type="text" class="form-control" placeholder="请填写会员卡号">
+                  <input type="text" v-model="userForm.PanelCode" class="form-control" placeholder="请填写会员卡号">
                 </div>
                 <div class="form-group">
                   <label>真实姓名</label>
-                  <input type="text" class="form-control" placeholder="请填写真实姓名">
+                  <input type="text" v-model="userForm.PanelRealName" class="form-control" placeholder="请填写真实姓名">
                 </div>
                 <div class="form-group">
                   <label>个人介绍</label>
-                  <textarea type="text" class="form-control" placeholder="请填写真实姓名" />
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> 同意一起赢注册条款
-                  </label>
+                  <textarea type="text" v-model="userForm.PanelRemark" class="form-control" placeholder="请填写真实姓名" />
                 </div>
                 <button type="submit" class="btn btn-primary">提交</button>
               </form>
@@ -60,9 +75,17 @@ export default {
   name: 'signup',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       userForm: {
-        name: ''
+        PanelLoginName: '',
+        PanelPw:'',
+        RPanelPw:'',
+        PanelEmail: '',
+        PanelCode: '',
+        PanelRealName: '',
+        PanelRemark: '',
+        PanelWebId: '1',
+        PanelType: 1,
+        action: 'panelRegister'
       }
     }
   },
@@ -73,10 +96,18 @@ export default {
   methods: {
     validateForm(){
       this.$validator.validateAll().then(() => {
-        console.log(this.userForm)
-      }).catch(() => {
+        api.signup(this.userForm).then(res => {
+          const {msg, result} = res.data;
+          if(result!=='ok'){
+            this.$toasted.error(msg);
+            return false;
+          }
 
-      });
+          this.$toasted.success(msg)
+        })
+      }).catch((error) => {
+        console.log(error)
+      })
     }
   }
 }

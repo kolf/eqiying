@@ -3,10 +3,19 @@
 import Vue from 'vue'
 import zh from 'vee-validate/dist/locale/zh_CN'
 import VeeValidate, { Validator } from 'vee-validate'
+import VueLazyload from 'vue-lazyload'
+import Toasted from 'vue-toasted'
 import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+
+Vue.use(VueLazyload)
+
+Vue.use(Toasted, {
+  position: 'top-center',
+  duration: 3000
+})
 
 Validator.addLocale(zh)
 Vue.use(VeeValidate, {

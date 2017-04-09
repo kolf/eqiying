@@ -1,7 +1,8 @@
 import axios from 'axios'
 import qs from 'qs'
 
-const API_ROOT = '/api/'
+// const API_ROOT = '/api/'
+axios.defaults.baseURL = process.env.API_ROOT
 
 const apis = {
 	announce: 'Announce.ashx', // 查询公告
@@ -10,17 +11,13 @@ const apis = {
 
 export default {
 	queryAnnounce() {
-		return axios.post( API_ROOT + apis.announce, qs.stringify({
+		return axios.post(apis.announce, qs.stringify({
       action:'queryByAgencyIdType',
       startIndex:1,
       endIndex:999999
     }))
 	},
-	signup() {
-		return axios.post( API_ROOT + apis.signup, qs.stringify({
-      action:'queryByAgencyIdType',
-      startIndex:1,
-      endIndex:999999
-    }))
+	signup(param) {
+		return axios.post(apis.signup, qs.stringify(param))
 	}
 }
