@@ -7,10 +7,15 @@ import VueLazyload from 'vue-lazyload'
 import Toasted from 'vue-toasted'
 import App from './App'
 import router from './router'
+import loading from './assets/loading.png'
 
 Vue.config.productionTip = false
 
-Vue.use(VueLazyload)
+Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    loading: loading,
+    attempt: 1
+})
 
 Vue.use(Toasted, {
   position: 'top-center',

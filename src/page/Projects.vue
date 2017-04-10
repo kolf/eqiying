@@ -25,244 +25,18 @@
         <div class="col-md-3">
           <div class="project">
               <figure class="img-responsive">
-                  <img v-lazy="">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
                   <img v-lazy="imgUrl">
                   <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
+                      <h4 class="project-details">一个鸡蛋的暴走</h4>
+                      <div class="project-creator">2017/04/12</div>
+                      <div class="project-price text-warning text-right"><strong>100积分</strong></div>
                   </figcaption>
                   <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
+                      <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
                   </span>
               </figure>
           </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-        <div class="col-md-3">
-          <div class="project">
-              <figure class="img-responsive">
-                  <img v-lazy="imgUrl">
-                  <figcaption>
-                      <span class="project-details">一个鸡蛋的暴走</span>
-                      <span class="project-price text-warning"><strong>100积分</strong></span>
-                      <span class="project-creator">2017/04/12</span>
-                  </figcaption>
-                  <span class="actions">
-                          <button class="btn btn-default bnt-action" type="submit" >项目详情</button>
-                  </span>
-              </figure>
-          </div>
-      </div>
-
+        </div>
       </div>
     </div>
   </div>
@@ -349,14 +123,14 @@ figcaption .project-details {
 }
 
 figcaption .project-price {
-    position: absolute;
-    right: 15px;
-    top: 12px;
+    // position: absolute;
+    // right: 15px;
+    // top: 12px;
     font-size: 22px;
-    text-align: right;
-    margin-top: 8px;
-    letter-spacing: -1px;
-    -webkit-font-smoothing: antialiased;
+    // text-align: right;
+    // margin-top: 8px;
+    // letter-spacing: -1px;
+    // -webkit-font-smoothing: antialiased;
 }
 
 figcaption .project-creator {

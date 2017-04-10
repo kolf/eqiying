@@ -37,6 +37,17 @@
 				    <label>密码</label>
 				    <input type="password" class="form-control" placeholder="请输入您的密码">
 				  </div>
+				  <div class="form-group">
+					  <label>验证码</label>
+					  <div class="input-group">
+						  <input class="form-control" type="text" placeholder="请输入验证码" />
+						  <span class="input-group-btn">
+							  <button class="btn btn-primary btn-add" type="button">
+								  <span class="glyphicon glyphicon-plus"></span>
+							  </button>
+						  </span>
+					  </div>
+                </div>
 				  <div class="checkbox">
 				    <label>
 				      <input type="checkbox"> 记住我
